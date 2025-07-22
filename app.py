@@ -3,7 +3,7 @@ import joblib
 import string
 from nltk.corpus import stopwords
 import nltk
-import speech_recognition as sr
+
 
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
@@ -70,7 +70,7 @@ with st.container():
     st.subheader("📝 Type Your Review")
     user_input = st.text_area("Enter your product review below 👇", height=150)
 
-    if st.button("🔍 Predict Sentiment from Text"):
+    if st.button("🔍 Predict Sentiment "):
         if user_input.strip() == "":
             st.warning("⚠️ Please enter a review before predicting.")
         else:
@@ -91,64 +91,12 @@ with st.container():
 
     st.markdown("---")
 
-    # --- SPEECH INPUT ---
-    st.subheader("🎤 Or Speak Your Review")
-
-    if st.button("🎙️ Record and Predict Sentiment from Speech"):
-        recognizer = sr.Recognizer()
-        mic = sr.Microphone()
-        st.info("🎙️ Listening... Please speak clearly into your microphone.")
-
-        with mic as source:
-            recognizer.adjust_for_ambient_noise(source)
-            audio = recognizer.listen(source)
-
-        try:
-            speech_text = recognizer.recognize_google(audio)
-            st.success(f"📝 Transcribed Text: {speech_text}")
-
-            cleaned_input = clean_text(speech_text)
-            vectorized_input = vectorizer.transform([cleaned_input])
-            prediction = model.predict(vectorized_input)[0]
-            prediction_proba = model.predict_proba(vectorized_input)[0]
-
-            st.markdown("<h4>✨ Prediction Result:</h4>", unsafe_allow_html=True)
-            st.markdown(f"<p style='font-size: 18px;'>🎯 The predicted sentiment is: <b>{prediction.upper()}</b></p>", unsafe_allow_html=True)
-
-            st.markdown("<h4>📊 Confidence Scores:</h4>", unsafe_allow_html=True)
-            for label, prob in zip(model.classes_, prediction_proba):
-                st.write(f"**{label.capitalize()}**: {prob*100:.2f}%")
-
-            emoji_map = {'positive': '😄', 'negative': '😡', 'neutral': '😐'}
-            st.markdown(f"<h1 style='text-align: center;'>{emoji_map[prediction]}</h1>", unsafe_allow_html=True)
-
-        except sr.UnknownValueError:
-            st.error("❌ Could not understand audio. Please try again.")
-        except sr.RequestError as e:
-            st.error(f"❌ Could not request results from Google Speech Recognition service; {e}")
-
-    st.markdown("</div>", unsafe_allow_html=True)
+    
 
 # Footer
 st.markdown("""
 <hr>
 <center>
-🚀 Built with Streamlit for your Data Science portfolio and lab projects.
+🚀 Built with Streamlit and Machine Learning for Business Analysis.
 </center>
 """, unsafe_allow_html=True)
-
-import speech_recognition as sr
-
-r = sr.Recognizer()
-mic = sr.Microphone()
-
-with mic as source:
-    r.adjust_for_ambient_noise(source)
-    print("Listening...")
-    audio = r.listen(source)
-
-try:
-    text = r.recognize_google(audio)
-    print(text)
-except Exception as e:
-    print(e)
