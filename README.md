@@ -20,7 +20,7 @@ An **interactive sentiment analysis dashboard** using **Machine Learning** to pr
 
 ## ⚡ Project Overview
 <p align="center">
-  <img src=""C:\Users\HP\Pictures\Screenshots\Screenshot 2025-07-22 192158.png"" alt="Dashboard Overview" width="700"/>
+  <img src="C:\Users\HP\Desktop\sentiment_analysis\Dashboard.png" alt="Dashboard Overview" width="700"/>
 </p>
 
 ---
