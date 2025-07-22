@@ -1,17 +1,16 @@
-# 💬 Sentiment Analysis on Product Reviews (Text & Speech Input)
+# 💬 Sentiment Analysis on Product Reviews (Text Input)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-red)
-![License](https://img.shields.io/badge/license-MIT-green)
 
-An **interactive sentiment analysis dashboard** using **Machine Learning** to predict **Positive, Negative, or** sentiment on product reviews, supporting **text input** and **speech input**.
-
+An **interactive sentiment analysis dashboard** using **Machine Learning** to predict **Positive or Negative** sentiment on product reviews, supporting **text input**.
+Streamlit Link:[https://sentimentanalysisonappuctreviews-vincy0409.streamlit.app/]
 ---
 
 ## 🚀 Features
 
-✅ Predict sentiment using **typed text** or **speech input** via microphone/audio upload.  
-✅ Displays **confidence scores** and **emoji feedback**.  
+✅ Predict sentiment using **typed text**.  
+✅ Displays **confidence scores**.  
 ✅ **Clean Streamlit dashboard** with custom gradient styling.  
 ✅ Suitable for **placements, labs, and portfolio projects**.  
 ✅ Easy to extend with advanced ML features.
@@ -22,7 +21,6 @@ An **interactive sentiment analysis dashboard** using **Machine Learning** to pr
 
 - Python (pandas, numpy, scikit-learn, nltk, joblib)
 - Streamlit (dashboard)
-- SpeechRecognition (speech-to-text)
 - Machine Learning (Naive Bayes / Logistic Regression)
 
 ---
@@ -73,17 +71,8 @@ pip install -r requirements.txt
 
 ```bash
 streamlit run app.py
+
 ```
-
----
-
-## 🎤 Speech Input Notes
-
-- Allow **microphone access** on your system for speech input.
-- Speak clearly in a quiet environment.
-- Alternatively, use **audio file upload** for stable speech-to-text analysis.
-
----
 
 ## 🧠 Model Training
 
@@ -95,7 +84,6 @@ streamlit run app.py
 ## 🙌 Acknowledgements
 
 - [Streamlit](https://streamlit.io)
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/)
 - [Scikit-learn](https://scikit-learn.org)
 - [NLTK](https://www.nltk.org)
 
