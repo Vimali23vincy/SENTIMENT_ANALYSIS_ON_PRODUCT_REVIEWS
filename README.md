@@ -101,7 +101,7 @@ streamlit run app.py
 
 ---
 
-## 🚀 Made with ❤️ using Streamlit for your Data Science Portfolio.
+## 🚀 Built with Streamlit and Machine Learning for Analysing Reviews.
 
 ---
 
