@@ -6,4 +6,3 @@ seaborn
 nltk
 streamlit
 joblib
-SpeechRecognition 
