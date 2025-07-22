@@ -18,13 +18,6 @@ An **interactive sentiment analysis dashboard** using **Machine Learning** to pr
 
 ---
 
-## ⚡ Project Overview
-<p align="center">
-  <img src="C:\Users\HP\Desktop\sentiment_analysis\Dashboard.png" alt="Dashboard Overview" width="700"/>
-</p>
-
----
-
 ## 🛠️ Tech Stack
 
 - Python (pandas, numpy, scikit-learn, nltk, joblib)
