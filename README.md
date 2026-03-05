@@ -1,104 +1,96 @@
-# 💬 Sentiment Analysis on Product Reviews (Text Input)
+# 💬 Sentiment Pro: Advanced Product Analytics Dashboard
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-red)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-red?style=for-the-badge&logo=streamlit)
+![Machine Learning](https://img.shields.io/badge/ML-Sentiment--Analysis-vibrantgreen?style=for-the-badge)
 
-An **interactive sentiment analysis dashboard** using **Machine Learning** to predict **Positive or Negative** sentiment on product reviews, supporting **text input**.
-Streamlit Link:[https://sentimentanalysisonappuctreviews-vincy0409.streamlit.app/]
+**Sentiment Pro** is a high-performance, interactive sentiment analysis dashboard powered by Machine Learning. It provides real-time emotional intelligence for product reviews using advanced NLP techniques and a stunning visual interface.
+
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
+Experience the live application here:  
+👉 **[Sentiment Pro on Streamlit Cloud](https://sentiment-analysis-on-product-reviews.streamlit.app/)**
 
-✅ Predict sentiment using **typed text**.  
-✅ Displays **confidence scores**.  
-✅ **Clean Streamlit dashboard** with custom gradient styling.  
-✅ Suitable for **placements, labs, and portfolio projects**.  
-✅ Easy to extend with advanced ML features.
+---
+
+## ✨ Features
+
+- **🧠 Neural Intelligence:** Powered by a calibrated Linear Support Vector Machine (SVM) for superior text classification.
+- **⚡ Advanced Preprocessing:** Custom text cleaning engine handling negations, bigrams, and TF-IDF vectorization.
+- **📊 Real-time Insights:** Instant sentiment prediction (Positive, Negative, Neutral) with confidence scores.
+- **📤 Bulk Analytics:** Upload CSV files to analyze thousands of reviews in seconds.
+- **🎨 Premium UI:** Modern "Soft Aurora" theme with glassmorphism effects and interactive Plotly visualizations.
+- **☁️ Global Stream Simulator:** Simulate a live feedback stream to see the model in action.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python (pandas, numpy, scikit-learn, nltk, joblib)
-- Streamlit (dashboard)
-- Machine Learning (Naive Bayes / Logistic Regression)
+- **Core:** Python 3.10+
+- **Machine Learning:** Scikit-learn (SVM, Pipeline)
+- **NLP:** NLTK (Stopwords removal, negation handling)
+- **Internal Data:** Pandas, NumPy
+- **Dashboard:** Streamlit
+- **Visuals:** Plotly Express, WordCloud, Matplotlib
 
 ---
 
 ## 📂 Project Structure
 
-```
-sentiment_analysis/
+```text
+SENTIMENT_ANALYSIS_ON_PRODUCT_REVIEWS/
 │
 ├── models/
-│   ├── sentiment_model.pkl
-│   └── vectorizer.pkl
+│   └── sentiment_pipeline.pkl    # Trained SVM Model Pipeline
 │
-├── app.py
-├── sentiment_training.ipynb
-├── requirements.txt
-└── README.md
+├── Datasets_Merged.csv           # Unified high-quality training dataset
+├── app.py                        # Main Streamlit Application (Premium UI)
+├── retrain.py                    # Model retraining script (Optimized SVM)
+├── optimize_dataset.py           # Dataset augmentation & boosting script
+├── requirements.txt              # Project dependencies
+└── README.md                     # Enhanced documentation
 ```
 
 ---
 
-## ⚡ Setup Instructions
+## ⚡ Setup & Installation
 
-1️⃣ **Clone the repository:**
-
+### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/sentiment-analysis-dashboard.git
-cd sentiment-analysis-dashboard
+git clone https://github.com/Vimali23vincy/SENTIMENT_ANALYSIS_ON_PRODUCT_REVIEWS.git
+cd SENTIMENT_ANALYSIS_ON_PRODUCT_REVIEWS
 ```
 
-2️⃣ **Create and activate a virtual environment:**
-
+### 2. Create a Virtual Environment
 ```bash
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
-# On Linux/macOS:
-source venv/bin/activate
 ```
 
-3️⃣ **Install required dependencies:**
-
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-4️⃣ **Run the Streamlit dashboard:**
-
+### 4. Run the Dashboard
 ```bash
 streamlit run app.py
-
 ```
 
-## 🧠 Model Training
+---
 
-- The model is trained on a labeled product review dataset.
-- You can retrain or improve using `sentiment_training.ipynb`.
+## 📖 How it Works
+The model uses a **Support Vector Machine (SVM)** with calibrated probabilities. Unlike simpler models, it's trained to understand common English negations (e.g., "not good" is correctly identified as negative). The project uses **TF-IDF Vectorization** with bigrams (2-word phrases) to capture more context than single words.
 
 ---
 
-## 🙌 Acknowledgements
-
-- [Streamlit](https://streamlit.io)
-- [Scikit-learn](https://scikit-learn.org)
-- [NLTK](https://www.nltk.org)
-
----
-
-## 🚀 Built with Streamlit and Machine Learning for Analysing Reviews.
+## 🙌 Author
+**Vimali Vincy M**  
+- **LinkedIn:** [vimalivincy-m](https://www.linkedin.com/in/vimalivincy-m)
+- **GitHub:** [@Vimali23vincy](https://github.com/Vimali23vincy)
+- **Email:** vincymicheal123@gmail.com
 
 ---
-
-## ✨ Contact
-
-For queries or collaboration:
-
-- Email:vincymicheal123@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/vimalivincy-m]
-- GitHub: [https://github.com/Vimali23vincy]
-
----
+*Built with ❤️ for Data-Driven Decision Making.*
