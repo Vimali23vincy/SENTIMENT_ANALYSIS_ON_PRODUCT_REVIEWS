@@ -8,4 +8,4 @@ streamlit
 joblib
 plotly
 wordcloud
-altair
+altair<5
