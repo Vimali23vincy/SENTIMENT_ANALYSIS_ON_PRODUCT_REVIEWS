@@ -10,7 +10,7 @@
 
 ## 🚀 Live Demo
 Experience the live application here:  
-👉 **[Sentiment Pro on Streamlit Cloud](https://sentiment-analysis-on-product-reviews.streamlit.app/)**
+👉 **[Sentiment Pro on Streamlit Cloud](https://sentimentanalysisonappuctreviews-vincy0409.streamlit.app/)**
 
 ---
 
